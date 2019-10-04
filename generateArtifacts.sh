@@ -8,9 +8,15 @@
 
 #set -e
 
-export FABRIC_ROOT=${PWD}/..
+
+
+export FABRIC_ROOT=${PWD}
 export FABRIC_CFG_PATH=${PWD}
+
+mkdir -p ${FABRIC_ROOT}/channel-artifacts
+
 echo
+
 
 # Print the usage message
 function printHelp () {
